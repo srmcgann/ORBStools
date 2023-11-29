@@ -32,14 +32,85 @@
       iframe{
         border: 0;
         margin: 0;
-        width: 50vw;
-        height: calc(100vh - 100px);
+        width: 500px;
+        height: 100vh;
         display: inline-block;
+      }
+      #practice{
+        border: 0;
+        margin: 0;
+        vertical-align: top;
+        padding: 20px;
+        background: #456;
+        width: calc(100vw - 550px);
+        height: 100vh;
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+      }
+      .practiceContainer{
+        width: calc(100% - 0px);
+        height: calc(100% - 300px);
+        border: 1px solid #4f88;
+        background: #123;
+      }
+      .button{
+        left: 50%;
+        position: relative;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #0fa;
+        background: #246;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 24px;
+        padding: 5px;
+        min-width: 100px;
+      }
+      hr{
+        border: 1px solid #4f84;
+        line-height: 0;
+        margin: 0;
+        padding: 0;
+      }
+      .logo{
+        background-image: url(https://srmcgann.github.io/temp/burst.png);
+        opacity: 100%;
+        width: 150px;
+        height: 150px;
+        background-position: center center;
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        position: fixed;
+        left: -10px;
+        top: -10px;
+      }
+      .title{
+        width: calc(100% - 105px);
+        float: right;
+        padding-bottom: 10px;
+      }
+      .clear{
+        clear: both;
       }
     </style>
   </head>
   <body>
-    <iframe id="mirrorsIframe" src="mirrors"></iframe>
-    <iframe id="mirrorsIframe" src="practice"></iframe>
+    <div class="logo"></div>
+    <div id="practice">
+      <div class="title">
+        <span style="font-size: 2em;">ORBS</span>, a game of staying on platforms
+        while collecting........ ORBS!<hr>
+        practice here, then when you are ready,<br>
+        create a game by clicking any of the mirror links at right ->
+        <br>
+      </div>
+      <div class="clear"></div>
+      <div class="practiceContainer">
+        <button class="button" onclick="openPracticeFrame()">practice</button>
+      </div>
+    </div>
+    <iframe id="mirrorsIframe" src="http://orbsTools.work.gd/mirrors"></iframe>
   </body>
 </html>
