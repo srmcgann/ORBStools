@@ -222,6 +222,9 @@
     </div>
     <script>
       mirrorsIframe = document.querySelector('#mirrorsIframe')
+      for(m=3;m--;) setTimeout(()=>{
+        mirrorsIframe.src = 'http://orbsTools.work.gd/mirrors'
+      },500*(m+1))
       setInterval(()=>{
         mirrorsIframe.src = 'http://orbsTools.work.gd/mirrors'
       },9500)
